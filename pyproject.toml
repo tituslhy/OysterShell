@@ -15,4 +15,8 @@ dependencies = [
     "ipykernel>=6.29.5",
     "jupyter>=1.1.1",
     "openai>=1.96.1",
+    "mcp[cli]>=1.11.0",
+    "langchain-mcp-adapters>=0.1.9",
+    "llama-index-tools-mcp>=0.2.6",
+    "ollama>=0.5.1",
 ]
