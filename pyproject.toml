@@ -12,4 +12,7 @@ dependencies = [
     "llama-index>=0.12.49",
     "llama-index-llms-ollama>=0.6.2",
     "llama-index-llms-openai-like>=0.4.0",
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "openai>=1.96.1",
 ]
