@@ -19,4 +19,6 @@ dependencies = [
     "langchain-mcp-adapters>=0.1.9",
     "llama-index-tools-mcp>=0.2.6",
     "ollama>=0.5.1",
+    "llama-index-llms-vllm>=0.5.1",
+    "langchain-community>=0.3.27",
 ]

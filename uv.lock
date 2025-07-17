@@ -1,5 +1,9 @@
 version = 1
 requires-python = ">=3.12"
+resolution-markers = [
+    "python_full_version < '3.13'",
+    "python_full_version >= '3.13'",
+]
 
 [[package]]
 name = "aiohappyeyeballs"
@@ -1136,6 +1140,29 @@ wheels = [
 ]
 
 [[package]]
+name = "langchain-community"
+version = "0.3.27"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "dataclasses-json" },
+    { name = "httpx-sse" },
+    { name = "langchain" },
+    { name = "langchain-core" },
+    { name = "langsmith" },
+    { name = "numpy" },
+    { name = "pydantic-settings" },
+    { name = "pyyaml" },
+    { name = "requests" },
+    { name = "sqlalchemy" },
+    { name = "tenacity" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5c/76/200494f6de488217a196c4369e665d26b94c8c3642d46e2fd62f9daf0a3a/langchain_community-0.3.27.tar.gz", hash = "sha256:e1037c3b9da0c6d10bf06e838b034eb741e016515c79ef8f3f16e53ead33d882", size = 33237737 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c8/bc/f8c7dae8321d37ed39ac9d7896617c4203248240a4835b136e3724b3bb62/langchain_community-0.3.27-py3-none-any.whl", hash = "sha256:581f97b795f9633da738ea95da9cb78f8879b538090c9b7a68c0aed49c828f0d", size = 2530442 },
+]
+
+[[package]]
 name = "langchain-core"
 version = "0.3.69"
 source = { registry = "https://pypi.org/simple" }
@@ -1477,6 +1504,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/df/df/807ac6bb9470295769f950562f5f7252cb491166693ee877ff77d9022fbc/llama_index_llms_openai_like-0.4.0.tar.gz", hash = "sha256:15ae1c16b01ba0bfa822d53900f03e35c19ffe47b528958234bf1942a91f587c", size = 4898 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b8/41/e080871437ec507377126165318f2da6713a4d6dc2767f2444a8bd818791/llama_index_llms_openai_like-0.4.0-py3-none-any.whl", hash = "sha256:52a3cb5ce78049fde5c9926898b90e02bc04e3d23adbc991842e9ff574df9ea1", size = 4593 },
+]
+
+[[package]]
+name = "llama-index-llms-vllm"
+version = "0.5.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "llama-index-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/dc/dc/87b471ab366f502eac582e1fdfbd9ed99d9fc66b03b973e886ed9e8d3567/llama_index_llms_vllm-0.5.1.tar.gz", hash = "sha256:21bb1a025ede64b5ab22e7407a195d872eac95d882ab0b425e09022b80049156", size = 6345 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/db/6a/ff225ba67d126a4be12b6756f7f8e6378f583ba129fe1971f7429b7a1d08/llama_index_llms_vllm-0.5.1-py3-none-any.whl", hash = "sha256:70a1fec7537d7dcb95fef2edc111f9608dcb033cd6397b410f718b4fe202806d", size = 6197 },
 ]
 
 [[package]]
@@ -2049,6 +2088,7 @@ dependencies = [
     { name = "ipykernel" },
     { name = "jupyter" },
     { name = "langchain" },
+    { name = "langchain-community" },
     { name = "langchain-mcp-adapters" },
     { name = "langchain-ollama" },
     { name = "langchain-openai" },
@@ -2056,6 +2096,7 @@ dependencies = [
     { name = "llama-index" },
     { name = "llama-index-llms-ollama" },
     { name = "llama-index-llms-openai-like" },
+    { name = "llama-index-llms-vllm" },
     { name = "llama-index-tools-mcp" },
     { name = "mcp", extra = ["cli"] },
     { name = "ollama" },
@@ -2067,6 +2108,7 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "langchain", specifier = ">=0.3.26" },
+    { name = "langchain-community", specifier = ">=0.3.27" },
     { name = "langchain-mcp-adapters", specifier = ">=0.1.9" },
     { name = "langchain-ollama", specifier = ">=0.3.4" },
     { name = "langchain-openai", specifier = ">=0.3.28" },
@@ -2074,6 +2116,7 @@ requires-dist = [
     { name = "llama-index", specifier = ">=0.12.49" },
     { name = "llama-index-llms-ollama", specifier = ">=0.6.2" },
     { name = "llama-index-llms-openai-like", specifier = ">=0.4.0" },
+    { name = "llama-index-llms-vllm", specifier = ">=0.5.1" },
     { name = "llama-index-tools-mcp", specifier = ">=0.2.6" },
     { name = "mcp", extras = ["cli"], specifier = ">=1.11.0" },
     { name = "ollama", specifier = ">=0.5.1" },
