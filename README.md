@@ -20,3 +20,6 @@ uv sync
 
 ### vLLM
 To setup your vLLM, run the notebook `2a. setup_vllm.ipynb` on Google Colab with the T4 GPU runtime selected.
+
+### Ollama
+To setup Ollama, follow the instructions on [Ollama's setup website](https://ollama.com/download).
