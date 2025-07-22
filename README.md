@@ -27,3 +27,6 @@ To setup your vLLM, run the notebook `2a. setup_vllm.ipynb` on Google Colab with
 
 ### Ollama
 To setup Ollama, follow the instructions on [Ollama's setup website](https://ollama.com/download).
+
+### Docker
+To setup Docker, follow the instructions on [Docker's get started website](https://www.docker.com/get-started/)
