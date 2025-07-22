@@ -6,7 +6,11 @@ We explore:
 2. Docker
 3. vLLM
 
-This GitHub repository is a companion resource to an upcoming Medium article.
+This GitHub repository is a companion resource to the medium article [Service please 👨🏻‍🍳 : 3 ways to serve an LLM](https://medium.com/@tituslhy/service-please-3-ways-to-serve-an-llm-ca5ead2547e6).
+
+<p align="center">
+    <img src="./images/eggs_served.webp">
+</p>
 
 ## Setup
 
